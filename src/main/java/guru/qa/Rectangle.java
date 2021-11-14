@@ -2,14 +2,35 @@ package guru.qa;
 
 public class Rectangle {
 
-    public int a;
-    public int b;
+    private int sideA;
+    private int sideB;
+
+    public Rectangle(int sideA, int sideB) {
+        this.sideA = sideA;
+        this.sideB = sideB;
+    }
+
+    public int getSideA() {
+        return sideA;
+    }
+
+    public void setSideA(int sideA) {
+        this.sideA = sideA;
+    }
+
+    public int getSideB() {
+        return sideB;
+    }
+
+    public void setSideB(int sideB) {
+        this.sideB = sideB;
+    }
 
     public double square() {
-        return a*b;
+        return sideA * sideB;
     }
 
     public int perimeter() {
-        return a*2 + b*2;
+        return sideA *2 + sideB *2;
     }
 }
